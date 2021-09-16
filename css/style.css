@@ -5,40 +5,126 @@ body{
 }
 
 .intro{
-    border: solid 1px black;
     width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 50px 0;
+    color: darkslategray;
 }
 
-.intro__wrapper{
+.intro .intro__wrapper{
     width: 50%;
     margin: 0 auto;
     text-align: center;
 }
 
+.intro .intro__wrapper .intro__title{
+    text-transform: uppercase;
+}
+.intro .intro__wrapper .intro__subtitle{
+    font-size: 16px;
+}
+
 
 .block{
-    border: solid 1px rebeccapurple;
     width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    margin: 0 0 50px 0;
 }
 
-.block__info{
+.block .block__info{
     margin: 0 auto;
-    border: solid 1px red;
     text-align: center;
 }
 
-.block__info_wrapper{
+.block .block__info .block__info-wrapper{
     padding: 20px;
 }
 
-.block__info-thumb{
+.block .block__info .block__info-wrapper .block__info-thumb{
     width: 100%;
-    
 }
 
-.block__info-title{
+.block .block__info .block__info-wrapper .block__info-title{
     display: block;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+
+.page{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.page .page__button{
+    background-color: rgb(254, 127, 45);
+    font-weight: bold;
+    color: white;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.page .page__button:hover{
+    background-color: rgb(161, 193, 129);
+    text-shadow: -1px 0px 2px rgb(255, 255, 255);
+    color: black
+}
+
+
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.container .container__block{
+    background-color:rgb(136, 136, 136);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.container .container__block .container__logo{
+    text-align: center;
+}
+
+.container .container__block .container__logo .container__img{
+    width: 50%;
+}
+
+.container .container__block .container__text .container__text-counter, 
+.container .container__block .container__text .container__text-title{
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    text-shadow: -1px 0px 2px black;
+}
+
+
+
+
+.container .container__block:nth-child(1){
+    background-color:rgb(35, 61, 77);
+}
+
+.container .container__block:nth-child(2){
+    background-color: rgb(254, 127, 45);
+}
+
+.container .container__block:nth-child(3){
+    background-color: rgb(252, 202, 70);
+}
+
+.container .container__block:nth-child(4){
+    background-color: rgb(161, 193, 129);
 }
